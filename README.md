@@ -36,23 +36,82 @@ getting _the_ "right" answer.
 
 - What is your take on the definition of DevOps?
 
+```
+DevOps is a methodology thtat aims to erase border between software development 
+process and software operations and maintance processes. It brings development practicies
+like Version controll, automated tests, etc. So we use same tools as for local testing
+by developers, and for infrastructure deployment and further maintaining.
+```
+
+
 - What is the responsibility of a DevOps engineer?
 
+```
+Smooth, understandable and flexible process of code flow from developers to production. 
+Clear understending for all members of team and business how the process of product delivery looks like, 
+and what stapes it have. Formalized procedures of responsibility transfers from different roles, such as
+quality gates and etc.
+```
+
+
 - Why has DevOps gained prominence over the last few years?
+
+```
+Development process evolves and becomes more effective. Now we can build infrustructure easely and with
+common fot developers tools. Othervise Operations engineers nowadeys need to use common development
+practicies and coding skills. Finally we achive much more universl teams, where all members instead of
+working only with restricted list of responsibilities can be involved to different steps of development
+process.
+```
+
 
 ### 2. Identify your environment
 
 - What is your primary OS?
 
+```
+My laptop OS is OSX, as soon I often work on mac. 
+For infrastructure I often use RHEL(centos) or Ubuntu server.
+```
+
 - What shell do you use on your daily job?
+
+```
+Zsh, as my local environment and often default bash on remote hostes.
+```
 
 ### 3. Weapons of choice?
 
 - What scripting language(s) are you comfortable with?
 
+```
+Python as universal tool, Bash for some easy automation, and now lerning Go as a new system lang.
+```
+
+
 - What cloud provider(s) have you had experience with and what have you used them for?
 
+```
+Azure, AWS, private Clouds.
+Wide list of different tasks and deployments. Infrastructure for web projects,
+data processing pipelines, integrations, etc.
+```
+
+
 - Name some tools that you use and describe their purpose in your work.
+
+```
+Git as version management and teem working
+Ansible as a configurationa managment tool
+Kubernetes and Helm as a microservice infrastructure managment platform
+Docker as ultimate containerization tool
+Prometheus as monitoring
+ElasticSearch/Kibana as log aggregating
+Grafana as vizualization metrics
+Jenkins/Gitlab-CI/Azure pipelines as CI/CD compute background
+Gitlab/gihub/bitbucket as Gitservers
+```
+
 
 ## Repo structure
 
