@@ -27,8 +27,9 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: mirshann/interview-devops/frontend:1.0
+        image: evgeniybog/interview-devops-frontend:1.0
         ports:
         - containerPort: 8080
         env:
-        - "REACT_APP_API_ROOT=http://backend-headless:5000"
+        - name: REACT_APP_API_ROOT
+          value: http://backend-headless:5000

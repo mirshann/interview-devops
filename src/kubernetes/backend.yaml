@@ -10,7 +10,7 @@ spec:
   - port: 5000
     name: server
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: backend
@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: mirshann/interview-devops/backend:1.0
+        image: evgeniybog/interview-devops-backend:1.0
         ports:
         - containerPort: 5000
           name: backend
