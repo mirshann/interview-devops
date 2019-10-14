@@ -48,20 +48,20 @@ by developers, and for infrastructure deployment and further maintaining.
 
 ```
 Smooth, understandable and flexible process of code flow from developers to production. 
-Clear understending for all members of team and business how the process of product delivery looks like, 
-and what stapes it have. Formalized procedures of responsibility transfers from different roles, such as
-quality gates and etc.
+Clear understending for all members of team and business how the process of product delivery
+looks like, and what stapes it have. Formalized procedures of responsibility transfers from
+different roles, such as quality gates and etc.
 ```
 
 
 - Why has DevOps gained prominence over the last few years?
 
 ```
-Development process evolves and becomes more effective. Now we can build infrustructure easely and with
-common fot developers tools. Othervise Operations engineers nowadeys need to use common development
-practicies and coding skills. Finally we achive much more universl teams, where all members instead of
-working only with restricted list of responsibilities can be involved to different steps of development
-process.
+Development process evolves and becomes more effective. Now we can build infrustructure easely 
+and with common fot developers tools. Othervise Operations engineers nowadeys need to use common
+development practicies and coding skills. Finally we achive much more universl teams, where all
+members instead of working only with restricted list of responsibilities can be involved to different
+steps of development process.
 ```
 
 
