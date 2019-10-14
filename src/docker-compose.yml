@@ -1,9 +1,23 @@
-frontend:
-  image: mirshann/interview-devops/frontend:1.0
-  environment:
-    - REACT_APP_API_ROOT=http://localhost:8080
-  expose:
-    - "8080"
+version: '3.7'
 
-backend:
-  image: mirshann/interview-devops/backend:1.0
+services:
+  frontend:
+    build: ./frontend
+    image: mirshann/interview-devops/frontend:1.0
+    environment:
+      - "REACT_APP_API_ROOT=http://localhost:8080"
+      # - "REACT_APP_API_ROOT=http://localhost:5000"
+    ports:
+      - "4100:4100"
+
+  backend.v1:
+    build: ./backend.v1
+    image: mirshann/interview-devops/backend:1.0
+    ports:
+      - "8080:8080"
+
+  # backend.v2:
+  #   build: ./backend.v2
+  #   image: mirshann/interview-devops/backend:2.0
+  #   ports:
+  #     -  "5000:5000"
