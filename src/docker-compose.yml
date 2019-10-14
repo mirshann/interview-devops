@@ -1,0 +1,9 @@
+frontend:
+  image: mirshann/interview-devops/frontend:1.0
+  environment:
+    - REACT_APP_API_ROOT=http://localhost:8080
+  expose:
+    - "8080"
+
+backend:
+  image: mirshann/interview-devops/backend:1.0
