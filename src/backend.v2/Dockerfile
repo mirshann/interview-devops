@@ -16,5 +16,5 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS runtime
 WORKDIR /app
 COPY --from=build /app/src/Conduit/out ./
-EXPOSE 5000
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "Conduit.dll"]

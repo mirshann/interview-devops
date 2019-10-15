@@ -170,12 +170,18 @@ The commands to start the applications are noted in their respective README.md, 
 version of backend. Right now to switch the backend API in the frontend, the developers have
 to comment/uncomment the environment value under [./src/frontend/.env.development](./src/frontend/.env.development) and then restart the frontend server.
 
+* try docker-compose for run both parts in momment [./src/README.MD](./src/README.MD)
+
 ### 2. Can we Dockerize the applications?
 
 We have heard good things about Docker and containerization technology, and think what if
 we bring in to our application stack. Can you help Dockerize the `frontend`, `backend.v1` and `backend.v2`?
 
 **Nice to have:** It's always good to save developers time with efficient processes. Is there any optimization that we can do?
+
+* Yes we can, find the "Dockerfiles" in [./src/frontend/Dockerfile](./src/frontend/Dockerfile), [./src/backend.v1/Dockerfile](./src/backend.v1/Dockerfile), [./src/backend.v2/Dockerfile](./src/backend.v2/Dockerfile)
+
+* Nice to have: just use "docker-compose build" from [./src/README.MD](./src/README.md)
 
 ### 3. Have you heard of that Kubernetes?
 
@@ -186,6 +192,8 @@ we bring in to our application stack. Can you help Dockerize the `frontend`, `ba
 - How is it related to Kubernetes?
 - Would IaC help us? If it would, how do we apply it to our stack?
 
+* Find prepared deployment on [./src/kubernetes/README.MD](./src/kubernetes/README.md)
+
 ### 4. (Extra) Ship it.
 
 It would be a super cool demo to our stakeholders if we can get the applications online and they can access it from their computer. It's okay if it's a just an IP address or some random domain name.
@@ -193,13 +201,21 @@ It would be a super cool demo to our stakeholders if we can get the applications
 If you want to take up this challenge. Please send an email to us and we will provide you
 with a limited access to a Kubernetes cluster that you can deploy the applications there. But if you have your own solution, go for it.
 
+* Check it [Deploy on DigitalOcean](http://68.183.249.205)
+
 ### 5. (Extra) How can we migrate from the old backend to the new backend?
 
 Each backend uses different SQLite databases, but it's okay to just point the frontend
 application to a different API without having to worry about the data. But how do we perform
 the migration with minimal down time?
 
+* For local deploy by docker compose now we use one db file.
+
+* On my opinion, best way will be move DB from conttainers to separate instance and use Version control on schema [Liquibase](http://www.liquibase.org)
+
 **Nice to have 1:** If you're comfortable with SQL, maybe you can help migrate even the data.
 
 **Nice to have 2:** If we can fix the code such that both backend versions can communicate with
 the same database with the same schema, then we will not have to migrate the data.
+
+* With docker-compose [./src/README.MD](./src/README.MD) both backends now use same DB locatted in mounted volume
