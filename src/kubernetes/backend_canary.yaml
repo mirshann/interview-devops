@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: backend
+        version: "1.0"
+        track: canary
+    spec:
+      containers:
+      - name: backend
+        image: evgeniybog/interview-devops-backend:2.0
+        ports:
+        - containerPort: 8080

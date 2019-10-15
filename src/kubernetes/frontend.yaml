@@ -8,8 +8,8 @@ spec:
     app: frontend
   ports:
   - port: 80
-    targetPort: 8080
-    name: http
+    name: web
+    targetPort: 4100
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -24,12 +24,14 @@ spec:
     metadata:
       labels:
         app: frontend
+        version: "1.0"
+        track: stable
     spec:
       containers:
       - name: frontend
         image: evgeniybog/interview-devops-frontend:1.0
         ports:
-        - containerPort: 8080
+        - containerPort: 4100
         env:
         - name: REACT_APP_API_ROOT
-          value: http://backend-headless:5000
+          value: http://159.89.221.179:8080
