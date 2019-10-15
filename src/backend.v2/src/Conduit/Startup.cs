@@ -23,7 +23,7 @@ namespace Conduit
 {
     public class Startup
     {
-        public const string DEFAULT_DATABASE_CONNECTIONSTRING = "Filename=realworld.db";
+        public const string DEFAULT_DATABASE_CONNECTIONSTRING = "Filename=data/gorm.db";
         public const string DEFAULT_DATABASE_PROVIDER = "sqlite";
 
         private readonly IConfiguration _config;
